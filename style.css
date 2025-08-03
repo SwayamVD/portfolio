@@ -1,0 +1,75 @@
+body {
+    background-color: #141619;
+    font-family: 'Jost', 'Poppins', sans-serif;
+}
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #b0b0b0; /* Light gray text */
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.sidebar .nav-link i {
+    font-size: 18px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #232529;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.sidebar .nav-link.active {
+    background-color: #232529;
+    color: #ffffff;
+}
+
+.sidebar .nav-link.active i {
+    color: #ffffff;
+}
+
+.sidebar .nav-link.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.content-section {
+  padding: 20px;
+  color: #b0b0b0;
+}
+
+
+
+
+
+.content-section .giveback{
+  background-color: #232529;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hover-effect{
+    color: #b0b0b0;
+}
+.hover-effect:hover {
+  color: #ffffff !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.topmargin{
+    margin-top: 10px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .topmargin{
+        margin-top: 150px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* your styles for lg and up */
+}
