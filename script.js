@@ -17,14 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.sidebar .nav-link');
+  // Select both sidebar nav links and dropdown items
+  const navLinks = document.querySelectorAll('.sidebar .nav-link, .dropdown-menu .dropdown-item');
   const contentSections = document.querySelectorAll('.content-section');
 
   navLinks.forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
 
-      // Remove active class from all links
+      // Remove active class from all links (both mobile and desktop)
       navLinks.forEach(l => l.classList.remove('active'));
       this.classList.add('active');
 
@@ -37,8 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (targetSection) {
         targetSection.classList.remove('d-none');
       }
+
+      // If clicked inside dropdown (mobile), close the dropdown after click
+      const dropdown = bootstrap.Dropdown.getInstance(this.closest('.dropdown-menu'));
+      if (dropdown) {
+        dropdown.hide();
+      }
     });
   });
 });
+
 
 
