@@ -11,41 +11,57 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body class="d-flex justify-content-center align-items-center">
+<body class="d-flex justify-content-center align-items-center"> 
     <div class="container topmargin">
         <div class="row">
             <div class="col-12 col-md-4 col-lg-3 sidebar d-flex flex-column p-3 text-white">
                 <h5 class="mb-1">Swayam Vijay Dusing</h5>
                 <small class="mb-4">swayamdusing@gmail.com</small>
-                <ul class="nav nav-pills flex-column mb-auto gap-1 sidebar">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active" data-target="about">
-                            <i class="bi bi-person-fill me-2"></i> About Me
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link" data-target="education">
-                            <i class="bi bi-mortarboard me-2"></i> Education
-                        </a>
-                    </li>
-                    <hr class="my-2">
-                    <li>
-                        <a href="#" class="nav-link" data-target="projects">
-                            <i class="bi bi-kanban me-2"></i> My Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link" data-target="certifications">
-                            <i class="bi bi-patch-check me-2"></i> Certifications
-                        </a>
-                    </li>
-                    <hr class="my-2">
-                    <li>
-                        <a href="#" class="nav-link" data-target="social">
-                            <i class="bi bi-link-45deg me-2"></i> Social Links
-                        </a>
-                    </li>
-                </ul>
+<div class="dropdown d-md-none">
+  <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Explore
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark w-100">
+    <li><a class="dropdown-item" href="#" data-target="about"><i class="bi bi-person-fill me-2"></i> About Me</a></li>
+    <li><a class="dropdown-item mt-2" href="#" data-target="education"><i class="bi bi-mortarboard me-2"></i> Education</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#" data-target="projects"><i class="bi bi-kanban me-2"></i> My Projects</a></li>
+    <li><a class="dropdown-item mt-2" href="#" data-target="certifications"><i class="bi bi-patch-check me-2"></i> Certifications</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#" data-target="social"><i class="bi bi-link-45deg me-2"></i> Social Links</a></li>
+  </ul>
+</div>
+
+<ul class="nav nav-pills flex-column mb-auto gap-1 sidebar d-none d-md-flex">
+  <li class="nav-item">
+    <a href="#" class="nav-link active" data-target="about">
+      <i class="bi bi-person-fill me-2"></i> About Me
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link" data-target="education">
+      <i class="bi bi-mortarboard me-2"></i> Education
+    </a>
+  </li>
+  <hr class="my-2">
+  <li>
+    <a href="#" class="nav-link" data-target="projects">
+      <i class="bi bi-kanban me-2"></i> My Projects
+    </a>
+  </li>
+  <li>
+    <a href="#" class="nav-link" data-target="certifications">
+      <i class="bi bi-patch-check me-2"></i> Certifications
+    </a>
+  </li>
+  <hr class="my-2">
+  <li>
+    <a href="#" class="nav-link" data-target="social">
+      <i class="bi bi-link-45deg me-2"></i> Social Links
+    </a>
+  </li>
+</ul>
+
             </div>
             <div class="col-12 col-md-8 col-lg-9">
                 <div id="about" class="content-section">
@@ -81,13 +97,13 @@
                                     <small class="text-secondary">SY CGPA: <span class="text-white"> 8.76</span></small>
                                 </div>
 
-                                <div class="mb-md-4 giveback">
+                                <div class="giveback mb-md-4">
                                     <h5 class="text-white mb-1">Diploma in Computer Engineering</h5>
                                     <p class="mb-1">Sandip Polytechnic</p>
                                     <small class="text-secondary">Final Year Percentage: <span class="text-white"> 91.81%</span></small>
                                 </div>
                             </div>
-                                <div class="giveback">
+                            <div class="giveback mt-4 mt-md-0">
                                     <h5 class="text-white mb-1">SSC (10th Grade)</h5>
                                     <p class=" mb-1">RJEMS</p>
                                     <small class="text-secondary">Percentage: <span class="text-white"> 82%</span></small>
